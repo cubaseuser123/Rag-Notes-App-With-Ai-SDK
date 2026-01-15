@@ -21,7 +21,7 @@ export default function Home() {
 
         {/* Title */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
-          Smart Notes
+          Your Personal Notes
         </h1>
 
         {/* Description */}
@@ -42,20 +42,6 @@ export default function Home() {
           <p>Built with Convex and the Vercel AI SDK</p>
         </div>
       </main>
-
-      {/* Footer */}
-      <footer className="mt-auto pt-16 pb-8">
-        <div className="text-center">
-          <a
-            href="https://www.youtube.com/c/codinginflow"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Full tutorial on YouTube →
-          </a>
-        </div>
-      </footer>
     </div>
   );
 }
