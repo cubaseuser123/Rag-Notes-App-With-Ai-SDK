@@ -16,15 +16,12 @@ import { useState } from "react"
 import { useForm } from "react-hook-form";
 import { AuthFormValues, signinSchema } from "../schema";
 import { useAuthActions } from "@convex-dev/auth/react";
-import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 
 export function SigninForm() {
   const [step, setStep] = useState<"signIn" | "signUp">("signIn");
   const { signIn } = useAuthActions()
   const [isLoading, setIsLoading] = useState(false);
-
-  const router = useRouter();
 
   const form = useForm<AuthFormValues>({
     resolver: zodResolver(signinSchema),
